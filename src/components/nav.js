@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export default function Nav() {
     return (
-        <nav>
-            <ul>
-                <li><Link href="/">Home</Link></li>
-                <li><Link href="/create">Create</Link></li>
-                <li><Link href="/">Read</Link></li>
-                <li><Link href="/">Update</Link></li>
-                <li><Link href="/">Delete</Link></li>
+        <nav className="bg-amber-500">
+            <ul className="grid grid-cols-5 py-2">
+                <li><Link className="font-sans font-semibold text-lg" href="/home">Home</Link></li>
+                <li><Link className="font-sans font-semibold text-lg" href="/create">Create</Link></li>
+                <li><Link className="font-sans font-semibold text-lg" href="/read">Read</Link></li>
+                <li><Link className="font-sans font-semibold text-lg" href="/update">Update</Link></li>
+                <li><Link className="font-sans font-semibold text-lg" href="/delete">Delete</Link></li>
             </ul>
         </nav>
     );
